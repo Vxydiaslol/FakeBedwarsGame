@@ -1,41 +1,1769 @@
-# Compiled Lua sources
-luac.out
+-- Gui to Lua
+-- Version: 3.2
 
-# luarocks build files
-*.src.rock
-*.zip
-*.tar.gz
+-- Instances:
 
-# Object files
-*.o
-*.os
-*.ko
-*.obj
-*.elf
+local ArrayList = Instance.new("ScreenGui")
+local TextLabel = Instance.new("TextLabel")
+local Frame = Instance.new("Frame")
+local UIListLayout = Instance.new("UIListLayout")
+local one = Instance.new("TextLabel")
+local two = Instance.new("TextLabel")
+local four = Instance.new("TextLabel")
+local eight = Instance.new("TextLabel")
+local six = Instance.new("TextLabel")
+local three = Instance.new("TextLabel")
+local five = Instance.new("TextLabel")
+local seven = Instance.new("TextLabel")
+local vxydiasware = Instance.new("ScreenGui")
+local TitleFrame = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local Arrow = Instance.new("ImageButton")
+local DropdownFrame = Instance.new("Frame")
+local UIListLayout_2 = Instance.new("UIListLayout")
+local killbutton = Instance.new("TextButton")
+local TitleFrame2 = Instance.new("Frame")
+local Title_2 = Instance.new("TextLabel")
+local Arrow_2 = Instance.new("ImageButton")
+local DropdownFrame_2 = Instance.new("Frame")
+local UIListLayout_3 = Instance.new("UIListLayout")
+local Fly = Instance.new("TextButton")
+local Speed = Instance.new("TextButton")
+local TitleFrame3 = Instance.new("Frame")
+local Title_3 = Instance.new("TextLabel")
+local Arrow_3 = Instance.new("ImageButton")
+local DropdownFrame_3 = Instance.new("Frame")
+local UIListLayout_4 = Instance.new("UIListLayout")
+local Nametags = Instance.new("TextButton")
+local ArrayList_2 = Instance.new("TextButton")
+local TitleFrame4 = Instance.new("Frame")
+local Title_4 = Instance.new("TextLabel")
+local Arrow_4 = Instance.new("ImageButton")
+local DropdownFrame_4 = Instance.new("Frame")
+local UIListLayout_5 = Instance.new("UIListLayout")
+local Credits = Instance.new("TextButton")
+local Nuker = Instance.new("TextButton")
+local Antivoid = Instance.new("TextButton")
+local Description = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local Credit1 = Instance.new("TextLabel")
+local Credit2 = Instance.new("TextLabel")
+local Credit3 = Instance.new("TextLabel")
+local Description_2 = Instance.new("TextLabel")
 
-# Precompiled Headers
-*.gch
-*.pch
+--Properties:
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-*.def
-*.exp
+ArrayList.Name = "ArrayList"
+ArrayList.Parent = game.CoreGui
+ArrayList.Enabled = false
+ArrayList.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+TextLabel.Parent = ArrayList
+TextLabel.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.864963472, 0, 0.134663343, 0)
+TextLabel.Size = UDim2.new(0, 233, 0, 50)
+TextLabel.Font = Enum.Font.Code
+TextLabel.Text = "array list"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 35.000
+TextLabel.TextWrapped = true
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+Frame.Parent = TextLabel
+Frame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0, 0, 1, 0)
+Frame.Size = UDim2.new(0, 233, 0, 340)
 
+UIListLayout.Parent = Frame
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+
+one.Name = "one"
+one.Parent = Frame
+one.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+one.BackgroundTransparency = 1.000
+one.Position = UDim2.new(0, 0, 0.0147058815, 0)
+one.Size = UDim2.new(0, 233, 0, 35)
+one.Visible = false
+one.Font = Enum.Font.Code
+one.Text = "CFrame Speed"
+one.TextColor3 = Color3.fromRGB(255, 255, 255)
+one.TextSize = 22.000
+one.TextWrapped = true
+
+two.Name = "two"
+two.Parent = Frame
+two.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+two.BackgroundTransparency = 1.000
+two.Position = UDim2.new(0, 0, 0.0147058815, 0)
+two.Size = UDim2.new(0, 233, 0, 35)
+two.Visible = false
+two.Font = Enum.Font.Code
+two.Text = "Array List"
+two.TextColor3 = Color3.fromRGB(255, 255, 255)
+two.TextSize = 22.000
+two.TextWrapped = true
+
+four.Name = "four"
+four.Parent = Frame
+four.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+four.BackgroundTransparency = 1.000
+four.Position = UDim2.new(0, 0, 0.0147058815, 0)
+four.Size = UDim2.new(0, 233, 0, 35)
+four.Visible = false
+four.Font = Enum.Font.Code
+four.Text = "Killaura"
+four.TextColor3 = Color3.fromRGB(255, 255, 255)
+four.TextSize = 22.000
+four.TextWrapped = true
+
+eight.Name = "eight"
+eight.Parent = Frame
+eight.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+eight.BackgroundTransparency = 1.000
+eight.Position = UDim2.new(0, 0, 0.0147058815, 0)
+eight.Size = UDim2.new(0, 233, 0, 35)
+eight.Visible = false
+eight.Font = Enum.Font.Code
+eight.Text = "Nametags"
+eight.TextColor3 = Color3.fromRGB(255, 255, 255)
+eight.TextSize = 22.000
+eight.TextWrapped = true
+
+six.Name = "six"
+six.Parent = Frame
+six.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+six.BackgroundTransparency = 1.000
+six.Position = UDim2.new(0, 0, 0.0147058815, 0)
+six.Size = UDim2.new(0, 233, 0, 35)
+six.Visible = false
+six.Font = Enum.Font.Code
+six.Text = "Antivoid"
+six.TextColor3 = Color3.fromRGB(255, 255, 255)
+six.TextSize = 22.000
+six.TextWrapped = true
+
+three.Name = "three"
+three.Parent = Frame
+three.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+three.BackgroundTransparency = 1.000
+three.Position = UDim2.new(0, 0, 0.0147058815, 0)
+three.Size = UDim2.new(0, 233, 0, 35)
+three.Visible = false
+three.Font = Enum.Font.Code
+three.Text = "Credits"
+three.TextColor3 = Color3.fromRGB(255, 255, 255)
+three.TextSize = 22.000
+three.TextWrapped = true
+
+five.Name = "five"
+five.Parent = Frame
+five.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+five.BackgroundTransparency = 1.000
+five.Position = UDim2.new(0, 0, 0.0147058815, 0)
+five.Size = UDim2.new(0, 233, 0, 35)
+five.Visible = false
+five.Font = Enum.Font.Code
+five.Text = "Flight"
+five.TextColor3 = Color3.fromRGB(255, 255, 255)
+five.TextSize = 22.000
+five.TextWrapped = true
+
+seven.Name = "seven"
+seven.Parent = Frame
+seven.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+seven.BackgroundTransparency = 1.000
+seven.Position = UDim2.new(0, 0, 0.0147058815, 0)
+seven.Size = UDim2.new(0, 233, 0, 35)
+seven.Visible = false
+seven.Font = Enum.Font.Code
+seven.Text = "Nuker"
+seven.TextColor3 = Color3.fromRGB(255, 255, 255)
+seven.TextSize = 22.000
+seven.TextWrapped = true
+
+vxydiasware.Name = "vxydiasware"
+vxydiasware.Parent = game.CoreGui
+vxydiasware.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+TitleFrame.Name = "TitleFrame"
+TitleFrame.Parent = vxydiasware
+TitleFrame.BackgroundColor3 = Color3.fromRGB(32, 32, 32)
+TitleFrame.BorderSizePixel = 0
+TitleFrame.Position = UDim2.new(0.199646115, 0, 0.134663343, 0)
+TitleFrame.Size = UDim2.new(0, 196, 0, 32)
+TitleFrame.ZIndex = 2
+
+Title.Name = "Title"
+Title.Parent = TitleFrame
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.BorderSizePixel = 0
+Title.Position = UDim2.new(0.0867346972, 0, 0, 0)
+Title.Size = UDim2.new(0, 125, 0, 32)
+Title.Font = Enum.Font.Code
+Title.Text = "combat"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextSize = 16.000
+Title.TextWrapped = true
+Title.TextXAlignment = Enum.TextXAlignment.Left
+
+Arrow.Name = "Arrow"
+Arrow.Parent = TitleFrame
+Arrow.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Arrow.BackgroundTransparency = 1.000
+Arrow.BorderSizePixel = 0
+Arrow.Position = UDim2.new(0.785714269, 0, 0.15625, 0)
+Arrow.Size = UDim2.new(0, 22, 0, 22)
+Arrow.ZIndex = 3
+Arrow.Image = "http://www.roblox.com/asset/?id=293296862"
+
+DropdownFrame.Name = "DropdownFrame"
+DropdownFrame.Parent = TitleFrame
+DropdownFrame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+DropdownFrame.BorderSizePixel = 0
+DropdownFrame.ClipsDescendants = true
+DropdownFrame.Position = UDim2.new(0, 0, 1, 0)
+DropdownFrame.Size = UDim2.new(0, 196, 0, 215)
+
+UIListLayout_2.Parent = DropdownFrame
+UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+
+killbutton.Name = "killbutton"
+killbutton.Parent = DropdownFrame
+killbutton.BackgroundColor3 = Color3.fromRGB(28, 28, 28)
+killbutton.BorderSizePixel = 0
+killbutton.Size = UDim2.new(0, 196, 0, 35)
+killbutton.Font = Enum.Font.Code
+killbutton.Text = "Killaura"
+killbutton.TextColor3 = Color3.fromRGB(255, 255, 255)
+killbutton.TextSize = 16.000
+killbutton.TextWrapped = true
+
+TitleFrame2.Name = "TitleFrame2"
+TitleFrame2.Parent = vxydiasware
+TitleFrame2.BackgroundColor3 = Color3.fromRGB(32, 32, 32)
+TitleFrame2.BorderSizePixel = 0
+TitleFrame2.Position = UDim2.new(0.313872039, 0, 0.134663343, 0)
+TitleFrame2.Size = UDim2.new(0, 196, 0, 32)
+TitleFrame2.ZIndex = 2
+
+Title_2.Name = "Title"
+Title_2.Parent = TitleFrame2
+Title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.BackgroundTransparency = 1.000
+Title_2.BorderSizePixel = 0
+Title_2.Position = UDim2.new(0.0867346972, 0, 0, 0)
+Title_2.Size = UDim2.new(0, 125, 0, 32)
+Title_2.Font = Enum.Font.Code
+Title_2.Text = "movement"
+Title_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.TextSize = 16.000
+Title_2.TextWrapped = true
+Title_2.TextXAlignment = Enum.TextXAlignment.Left
+
+Arrow_2.Name = "Arrow"
+Arrow_2.Parent = TitleFrame2
+Arrow_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Arrow_2.BackgroundTransparency = 1.000
+Arrow_2.BorderSizePixel = 0
+Arrow_2.Position = UDim2.new(0.785714269, 0, 0.15625, 0)
+Arrow_2.Size = UDim2.new(0, 22, 0, 22)
+Arrow_2.ZIndex = 3
+Arrow_2.Image = "http://www.roblox.com/asset/?id=293296862"
+
+DropdownFrame_2.Name = "DropdownFrame"
+DropdownFrame_2.Parent = TitleFrame2
+DropdownFrame_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+DropdownFrame_2.BorderSizePixel = 0
+DropdownFrame_2.ClipsDescendants = true
+DropdownFrame_2.Position = UDim2.new(0, 0, 1, 0)
+DropdownFrame_2.Size = UDim2.new(0, 196, 0, 215)
+
+UIListLayout_3.Parent = DropdownFrame_2
+UIListLayout_3.SortOrder = Enum.SortOrder.LayoutOrder
+
+Fly.Name = "Fly"
+Fly.Parent = DropdownFrame_2
+Fly.BackgroundColor3 = Color3.fromRGB(28, 28, 28)
+Fly.BorderSizePixel = 0
+Fly.Size = UDim2.new(0, 196, 0, 35)
+Fly.Font = Enum.Font.Code
+Fly.Text = "Flight"
+Fly.TextColor3 = Color3.fromRGB(255, 255, 255)
+Fly.TextSize = 16.000
+Fly.TextWrapped = true
+
+Speed.Name = "Speed"
+Speed.Parent = DropdownFrame_2
+Speed.BackgroundColor3 = Color3.fromRGB(28, 28, 28)
+Speed.BorderSizePixel = 0
+Speed.Size = UDim2.new(0, 196, 0, 35)
+Speed.Font = Enum.Font.Code
+Speed.Text = "CFrame Speed"
+Speed.TextColor3 = Color3.fromRGB(255, 255, 255)
+Speed.TextSize = 16.000
+Speed.TextWrapped = true
+
+TitleFrame3.Name = "TitleFrame3"
+TitleFrame3.Parent = vxydiasware
+TitleFrame3.BackgroundColor3 = Color3.fromRGB(32, 32, 32)
+TitleFrame3.BorderSizePixel = 0
+TitleFrame3.Position = UDim2.new(0.42774868, 0, 0.134663343, 0)
+TitleFrame3.Size = UDim2.new(0, 196, 0, 32)
+TitleFrame3.ZIndex = 2
+
+Title_3.Name = "Title"
+Title_3.Parent = TitleFrame3
+Title_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_3.BackgroundTransparency = 1.000
+Title_3.BorderSizePixel = 0
+Title_3.Position = UDim2.new(0.0867346972, 0, 0, 0)
+Title_3.Size = UDim2.new(0, 125, 0, 32)
+Title_3.Font = Enum.Font.Code
+Title_3.Text = "visuals"
+Title_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_3.TextSize = 16.000
+Title_3.TextWrapped = true
+Title_3.TextXAlignment = Enum.TextXAlignment.Left
+
+Arrow_3.Name = "Arrow"
+Arrow_3.Parent = TitleFrame3
+Arrow_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Arrow_3.BackgroundTransparency = 1.000
+Arrow_3.BorderSizePixel = 0
+Arrow_3.Position = UDim2.new(0.785714269, 0, 0.15625, 0)
+Arrow_3.Size = UDim2.new(0, 22, 0, 22)
+Arrow_3.ZIndex = 3
+Arrow_3.Image = "http://www.roblox.com/asset/?id=293296862"
+
+DropdownFrame_3.Name = "DropdownFrame"
+DropdownFrame_3.Parent = TitleFrame3
+DropdownFrame_3.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+DropdownFrame_3.BorderSizePixel = 0
+DropdownFrame_3.ClipsDescendants = true
+DropdownFrame_3.Position = UDim2.new(0, 0, 1, 0)
+DropdownFrame_3.Size = UDim2.new(0, 196, 0, 215)
+
+UIListLayout_4.Parent = DropdownFrame_3
+UIListLayout_4.SortOrder = Enum.SortOrder.LayoutOrder
+
+Nametags.Name = "Nametags"
+Nametags.Parent = DropdownFrame_3
+Nametags.BackgroundColor3 = Color3.fromRGB(28, 28, 28)
+Nametags.BorderSizePixel = 0
+Nametags.Size = UDim2.new(0, 196, 0, 35)
+Nametags.Font = Enum.Font.Code
+Nametags.Text = "Nametags"
+Nametags.TextColor3 = Color3.fromRGB(255, 255, 255)
+Nametags.TextSize = 16.000
+Nametags.TextWrapped = true
+
+ArrayList_2.Name = "ArrayList"
+ArrayList_2.Parent = DropdownFrame_3
+ArrayList_2.BackgroundColor3 = Color3.fromRGB(28, 28, 28)
+ArrayList_2.BorderSizePixel = 0
+ArrayList_2.Size = UDim2.new(0, 196, 0, 35)
+ArrayList_2.Font = Enum.Font.Code
+ArrayList_2.Text = "Array List"
+ArrayList_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+ArrayList_2.TextSize = 16.000
+ArrayList_2.TextWrapped = true
+
+TitleFrame4.Name = "TitleFrame4"
+TitleFrame4.Parent = vxydiasware
+TitleFrame4.BackgroundColor3 = Color3.fromRGB(32, 32, 32)
+TitleFrame4.BorderSizePixel = 0
+TitleFrame4.Position = UDim2.new(0.541437626, 0, 0.134663343, 0)
+TitleFrame4.Size = UDim2.new(0, 196, 0, 32)
+TitleFrame4.ZIndex = 2
+
+Title_4.Name = "Title"
+Title_4.Parent = TitleFrame4
+Title_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_4.BackgroundTransparency = 1.000
+Title_4.BorderSizePixel = 0
+Title_4.Position = UDim2.new(0.0867346972, 0, 0, 0)
+Title_4.Size = UDim2.new(0, 125, 0, 32)
+Title_4.Font = Enum.Font.Code
+Title_4.Text = "utility"
+Title_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_4.TextSize = 16.000
+Title_4.TextWrapped = true
+Title_4.TextXAlignment = Enum.TextXAlignment.Left
+
+Arrow_4.Name = "Arrow"
+Arrow_4.Parent = TitleFrame4
+Arrow_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Arrow_4.BackgroundTransparency = 1.000
+Arrow_4.BorderSizePixel = 0
+Arrow_4.Position = UDim2.new(0.785714269, 0, 0.15625, 0)
+Arrow_4.Size = UDim2.new(0, 22, 0, 22)
+Arrow_4.ZIndex = 3
+Arrow_4.Image = "http://www.roblox.com/asset/?id=293296862"
+
+DropdownFrame_4.Name = "DropdownFrame"
+DropdownFrame_4.Parent = TitleFrame4
+DropdownFrame_4.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+DropdownFrame_4.BorderSizePixel = 0
+DropdownFrame_4.ClipsDescendants = true
+DropdownFrame_4.Position = UDim2.new(0, 0, 1, 0)
+DropdownFrame_4.Size = UDim2.new(0, 196, 0, 215)
+
+UIListLayout_5.Parent = DropdownFrame_4
+UIListLayout_5.SortOrder = Enum.SortOrder.LayoutOrder
+
+Credits.Name = "Credits"
+Credits.Parent = DropdownFrame_4
+Credits.BackgroundColor3 = Color3.fromRGB(28, 28, 28)
+Credits.BorderSizePixel = 0
+Credits.Size = UDim2.new(0, 196, 0, 35)
+Credits.Font = Enum.Font.Code
+Credits.Text = "Credits"
+Credits.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credits.TextSize = 16.000
+Credits.TextWrapped = true
+
+Nuker.Name = "Nuker"
+Nuker.Parent = DropdownFrame_4
+Nuker.BackgroundColor3 = Color3.fromRGB(28, 28, 28)
+Nuker.BorderSizePixel = 0
+Nuker.Size = UDim2.new(0, 196, 0, 35)
+Nuker.Font = Enum.Font.Code
+Nuker.Text = "Nuker"
+Nuker.TextColor3 = Color3.fromRGB(255, 255, 255)
+Nuker.TextSize = 16.000
+Nuker.TextWrapped = true
+
+Antivoid.Name = "Antivoid"
+Antivoid.Parent = DropdownFrame_4
+Antivoid.BackgroundColor3 = Color3.fromRGB(28, 28, 28)
+Antivoid.BorderSizePixel = 0
+Antivoid.Size = UDim2.new(0, 196, 0, 35)
+Antivoid.Font = Enum.Font.Code
+Antivoid.Text = "AntiVoid"
+Antivoid.TextColor3 = Color3.fromRGB(255, 255, 255)
+Antivoid.TextSize = 16.000
+Antivoid.TextWrapped = true
+
+Description.Name = "Description"
+Description.Parent = vxydiasware
+Description.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Description.BackgroundTransparency = 1.000
+Description.Position = UDim2.new(0.013245035, 0, 0.0461306684, 0)
+Description.Size = UDim2.new(0, 102, 0, 25)
+Description.Font = Enum.Font.Code
+Description.Text = "Ware"
+Description.TextColor3 = Color3.fromRGB(255, 255, 255)
+Description.TextScaled = true
+Description.TextSize = 14.000
+Description.TextWrapped = true
+Description.TextXAlignment = Enum.TextXAlignment.Left
+
+TextLabel_2.Parent = vxydiasware
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.013245035, 0, 0.0162094757, 0)
+TextLabel_2.Size = UDim2.new(0, 102, 0, 41)
+TextLabel_2.Font = Enum.Font.Code
+TextLabel_2.Text = "Vxydias"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
+
+Credit1.Name = "Credit1"
+Credit1.Parent = vxydiasware
+Credit1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credit1.BackgroundTransparency = 1.000
+Credit1.Position = UDim2.new(0.0126899481, 0, 0.80597192, 0)
+Credit1.Size = UDim2.new(0, 329, 0, 35)
+Credit1.Visible = false
+Credit1.Font = Enum.Font.Code
+Credit1.Text = "Credits: Me ok Vxydias#0001"
+Credit1.TextColor3 = Color3.fromRGB(0, 255, 255)
+Credit1.TextScaled = true
+Credit1.TextSize = 14.000
+Credit1.TextWrapped = true
+Credit1.TextXAlignment = Enum.TextXAlignment.Left
+
+Credit2.Name = "Credit2"
+Credit2.Parent = Credit1
+Credit2.BackgroundColor3 = Color3.fromRGB(255, 255, 0)
+Credit2.BackgroundTransparency = 1.000
+Credit2.Position = UDim2.new(-0.00130170584, 0, 1.28448617, 0)
+Credit2.Size = UDim2.new(0, 329, 0, 36)
+Credit2.Font = Enum.Font.Code
+Credit2.Text = "Credits: Vxydias#0001 (UI & Code Sometimes) (OWNER)"
+Credit2.TextColor3 = Color3.fromRGB(255, 255, 0)
+Credit2.TextScaled = true
+Credit2.TextSize = 14.000
+Credit2.TextWrapped = true
+Credit2.TextXAlignment = Enum.TextXAlignment.Left
+
+Credit3.Name = "Credit3"
+Credit3.Parent = Credit1
+Credit3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credit3.BackgroundTransparency = 1.000
+Credit3.Position = UDim2.new(-0.00203752518, 0, 2.788378, 0)
+Credit3.Size = UDim2.new(0, 329, 0, 36)
+Credit3.Font = Enum.Font.Code
+Credit3.Text = "Credits: Vxdyias#0001 (for antivoid, meganuker.)"
+Credit3.TextColor3 = Color3.fromRGB(31, 31, 31)
+Credit3.TextScaled = true
+Credit3.TextSize = 14.000
+Credit3.TextWrapped = true
+Credit3.TextXAlignment = Enum.TextXAlignment.Left
+
+Description_2.Name = "Description"
+Description_2.Parent = vxydiasware
+Description_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Description_2.BackgroundTransparency = 1.000
+Description_2.Position = UDim2.new(0.013245035, 0, 0.0673276782, 0)
+Description_2.Size = UDim2.new(0, 102, 0, 25)
+Description_2.Font = Enum.Font.Code
+Description_2.Text = "(private)"
+Description_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Description_2.TextScaled = true
+Description_2.TextSize = 14.000
+Description_2.TextWrapped = true
+Description_2.TextXAlignment = Enum.TextXAlignment.Left
+
+-- Scripts:
+
+local function MNEUU_fake_script() -- one.RAINBOW 
+	local script = Instance.new('LocalScript', one)
+
+	local text = script.Parent
+	local add = 15
+	wait()
+	local k = 1
+	while k <= 255 do
+		text.TextColor3 = Color3.new(k/255,0/255,0/255)
+		k = k + add
+		wait()
+	end
+	while true do
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255,k/255,0/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255 - k/255,255/255,0/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(0/255,255/255,k/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(0/255,255/255 - k/255,255/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(k/255,0/255,255/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255,0/255,255/255 - k/255)
+			k = k + add
+			wait()
+		end
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255 - k/255,0/255,0/255)
+			k = k + add
+			wait()
+		end
+	end
+end
+coroutine.wrap(MNEUU_fake_script)()
+local function UHGKQX_fake_script() -- two.RAINBOW 
+	local script = Instance.new('LocalScript', two)
+
+	local text = script.Parent
+	local add = 15
+	wait()
+	local k = 1
+	while k <= 255 do
+		text.TextColor3 = Color3.new(k/255,0/255,0/255)
+		k = k + add
+		wait()
+	end
+	while true do
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255,k/255,0/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255 - k/255,255/255,0/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(0/255,255/255,k/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(0/255,255/255 - k/255,255/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(k/255,0/255,255/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255,0/255,255/255 - k/255)
+			k = k + add
+			wait()
+		end
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255 - k/255,0/255,0/255)
+			k = k + add
+			wait()
+		end
+	end
+end
+coroutine.wrap(UHGKQX_fake_script)()
+local function QXPVW_fake_script() -- four.RAINBOW 
+	local script = Instance.new('LocalScript', four)
+
+	local text = script.Parent
+	local add = 15
+	wait()
+	local k = 1
+	while k <= 255 do
+		text.TextColor3 = Color3.new(k/255,0/255,0/255)
+		k = k + add
+		wait()
+	end
+	while true do
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255,k/255,0/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255 - k/255,255/255,0/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(0/255,255/255,k/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(0/255,255/255 - k/255,255/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(k/255,0/255,255/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255,0/255,255/255 - k/255)
+			k = k + add
+			wait()
+		end
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255 - k/255,0/255,0/255)
+			k = k + add
+			wait()
+		end
+	end
+end
+coroutine.wrap(QXPVW_fake_script)()
+local function JUJDWX_fake_script() -- eight.RAINBOW 
+	local script = Instance.new('LocalScript', eight)
+
+	local text = script.Parent
+	local add = 15
+	wait()
+	local k = 1
+	while k <= 255 do
+		text.TextColor3 = Color3.new(k/255,0/255,0/255)
+		k = k + add
+		wait()
+	end
+	while true do
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255,k/255,0/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255 - k/255,255/255,0/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(0/255,255/255,k/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(0/255,255/255 - k/255,255/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(k/255,0/255,255/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255,0/255,255/255 - k/255)
+			k = k + add
+			wait()
+		end
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255 - k/255,0/255,0/255)
+			k = k + add
+			wait()
+		end
+	end
+end
+coroutine.wrap(JUJDWX_fake_script)()
+local function KEKN_fake_script() -- six.RAINBOW 
+	local script = Instance.new('LocalScript', six)
+
+	local text = script.Parent
+	local add = 15
+	wait()
+	local k = 1
+	while k <= 255 do
+		text.TextColor3 = Color3.new(k/255,0/255,0/255)
+		k = k + add
+		wait()
+	end
+	while true do
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255,k/255,0/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255 - k/255,255/255,0/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(0/255,255/255,k/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(0/255,255/255 - k/255,255/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(k/255,0/255,255/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255,0/255,255/255 - k/255)
+			k = k + add
+			wait()
+		end
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255 - k/255,0/255,0/255)
+			k = k + add
+			wait()
+		end
+	end
+end
+coroutine.wrap(KEKN_fake_script)()
+local function KEYAQ_fake_script() -- three.RAINBOW 
+	local script = Instance.new('LocalScript', three)
+
+	local text = script.Parent
+	local add = 15
+	wait()
+	local k = 1
+	while k <= 255 do
+		text.TextColor3 = Color3.new(k/255,0/255,0/255)
+		k = k + add
+		wait()
+	end
+	while true do
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255,k/255,0/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255 - k/255,255/255,0/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(0/255,255/255,k/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(0/255,255/255 - k/255,255/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(k/255,0/255,255/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255,0/255,255/255 - k/255)
+			k = k + add
+			wait()
+		end
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255 - k/255,0/255,0/255)
+			k = k + add
+			wait()
+		end
+	end
+end
+coroutine.wrap(KEYAQ_fake_script)()
+local function WDNBRPX_fake_script() -- five.RAINBOW 
+	local script = Instance.new('LocalScript', five)
+
+	local text = script.Parent
+	local add = 15
+	wait()
+	local k = 1
+	while k <= 255 do
+		text.TextColor3 = Color3.new(k/255,0/255,0/255)
+		k = k + add
+		wait()
+	end
+	while true do
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255,k/255,0/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255 - k/255,255/255,0/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(0/255,255/255,k/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(0/255,255/255 - k/255,255/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(k/255,0/255,255/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255,0/255,255/255 - k/255)
+			k = k + add
+			wait()
+		end
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255 - k/255,0/255,0/255)
+			k = k + add
+			wait()
+		end
+	end
+end
+coroutine.wrap(WDNBRPX_fake_script)()
+local function WGKJCVD_fake_script() -- seven.RAINBOW 
+	local script = Instance.new('LocalScript', seven)
+
+	local text = script.Parent
+	local add = 15
+	wait()
+	local k = 1
+	while k <= 255 do
+		text.TextColor3 = Color3.new(k/255,0/255,0/255)
+		k = k + add
+		wait()
+	end
+	while true do
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255,k/255,0/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255 - k/255,255/255,0/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(0/255,255/255,k/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(0/255,255/255 - k/255,255/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(k/255,0/255,255/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255,0/255,255/255 - k/255)
+			k = k + add
+			wait()
+		end
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255 - k/255,0/255,0/255)
+			k = k + add
+			wait()
+		end
+	end
+end
+coroutine.wrap(WGKJCVD_fake_script)()
+local function DNHZ_fake_script() -- TextLabel.Dragify 
+	local script = Instance.new('LocalScript', TextLabel)
+
+	script.Parent.Draggable = true
+	script.Parent.Active = true
+	script.Parent.Selectable = true
+end
+coroutine.wrap(DNHZ_fake_script)()
+local function TVXST_fake_script() -- TextLabel.RAINBOW 
+	local script = Instance.new('LocalScript', TextLabel)
+
+	local text = script.Parent
+	local add = 15
+	wait()
+	local k = 1
+	while k <= 255 do
+		text.TextColor3 = Color3.new(k/255,0/255,0/255)
+		k = k + add
+		wait()
+	end
+	while true do
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255,k/255,0/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255 - k/255,255/255,0/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(0/255,255/255,k/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(0/255,255/255 - k/255,255/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(k/255,0/255,255/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255,0/255,255/255 - k/255)
+			k = k + add
+			wait()
+		end
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255 - k/255,0/255,0/255)
+			k = k + add
+			wait()
+		end
+	end
+end
+coroutine.wrap(TVXST_fake_script)()
+local function LKPEO_fake_script() -- ArrayList.LocalScript 
+	local script = Instance.new('LocalScript', ArrayList)
+
+	local UIS = game:GetService("UserInputService")
+	local toggle = false
+	
+	UIS.InputBegan:Connect(function(input, gameProcessed)
+		if input.KeyCode == Enum.KeyCode.RightShift then
+			if toggle then
+				script.Parent.TextLabel.TextTransparency = 0
+				script.Parent.TextLabel.BackgroundTransparency = 0
+				script.Parent.TextLabel.Frame.BackgroundTransparency = 0
+				toggle = false
+			elseif not toggle then
+				script.Parent.TextLabel.TextTransparency = 1
+				script.Parent.TextLabel.BackgroundTransparency = 1
+				script.Parent.TextLabel.Frame.BackgroundTransparency = 1
+				toggle = true
+			end
+		end
+	end)
+end
+coroutine.wrap(LKPEO_fake_script)()
+local function LXTP_fake_script() -- Arrow.LocalScript 
+	local script = Instance.new('LocalScript', Arrow)
+
+	local TweenService = game:GetService("TweenService")
+	local Object = script.Parent -- The object you want to tween.
+	local open = false
+	local frame = script.Parent.Parent.Parent.TitleFrame.DropdownFrame
+	frame:TweenSize(UDim2.new(0, 196,0, 0),Enum.EasingDirection.Out,Enum.EasingStyle.Linear, 0, true)
+	local tweenInfo = TweenInfo.new(
+		0.40, -- The time the tween takes to complete
+		Enum.EasingStyle.Quint, -- The tween style.
+		Enum.EasingDirection.Out, -- EasingDirection
+		0, -- How many times you want the tween to repeat. If you make it less than 0 it will repeat forever.
+		false, -- Reverse?
+		0 -- Delay
+	)
+	
+	local Closed = TweenService:Create(Object, tweenInfo, {Rotation = 180}) -- Creates the tween with the TweenInfo and what properties you want to change
+	
+	local Opened = TweenService:Create(Object, tweenInfo, {Rotation = 0}) -- Creates the tween with the TweenInfo and what properties you want to change
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if open == false then
+			Closed:Play()
+			frame:TweenSize(UDim2.new(0, 196,0, 215),Enum.EasingDirection.Out,Enum.EasingStyle.Quint, 0.40, true)
+			open = true
+		elseif open == true then
+			Opened:Play()
+			frame:TweenSize(UDim2.new(0, 196,0, 0),Enum.EasingDirection.Out,Enum.EasingStyle.Quint, 0.40, true)
+			open = false
+		end
+	end)
+end
+coroutine.wrap(LXTP_fake_script)()
+local function DDCZA_fake_script() -- killbutton.LocalScript 
+	local script = Instance.new('LocalScript', killbutton)
+
+	
+	
+	local on = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if on == false then
+			script.Parent.Parent.Parent.Parent.Parent.ArrayList.TextLabel.Frame.four.Visible = true
+			script.Parent.BackgroundColor3 = Color3.new(0.419608, 0.839216, 0)
+			on = true
+			local callback = true
+	
+			if callback then
+				_G.InstaKillExploit = true
+	
+				while _G.InstaKillExploit do wait()
+	
+					if workspace[game.Players.LocalPlayer.Name]:FindFirstChild("wood_sword") then
+						local args = {
+							[1] = {
+								[1] = {
+									[1] = "\18",
+									[2] = "wood_sword",
+									[3] = nil,
+									[4] = Vector3.new(-0.6882433295249939, -5.313460338385312e-09, -0.7254799008369446),
+									[5] = {
+										[1] = nil,
+										[2] = nil,
+										[3] = nil,
+										[4] = nil,
+										[5] = nil,
+										[6] = nil,
+										[7] = nil,
+										[8] = nil,
+										[9] = nil,
+										[10] = nil,
+										[11] = nil,
+										[12] = game:GetService("Players").LocalPlayer.Character.LeftLowerLeg,
+										[13] = game:GetService("Players").LocalPlayer.Character.LeftFoot,
+										[14] = game:GetService("Players").LocalPlayer.Character.RightFoot,
+										[15] = game:GetService("Players").LocalPlayer.Character.RightLowerLeg,
+										[16] = game:GetService("Players").LocalPlayer.Character.RightUpperLeg,
+										[17] = game:GetService("Players").LocalPlayer.Character.LeftUpperLeg,
+										[18] = game:GetService("Players").LocalPlayer.Character.LeftHand,
+										[19] = game:GetService("Players").LocalPlayer.Character.LeftLowerArm,
+										[20] = game:GetService("Players").LocalPlayer.Character.LowerTorso,
+										[21] = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart,
+										[22] = game:GetService("Players").LocalPlayer.Character.UpperTorso,
+										[23] = game:GetService("Players").LocalPlayer.Character.RightLowerArm,
+										[24] = game:GetService("Players").LocalPlayer.Character.wood_sword.Handle,
+										[25] = game:GetService("Players").LocalPlayer.Character.wood_sword.SwordPart,
+										[26] = game:GetService("Players").LocalPlayer.Character.RightUpperArm,
+										[27] = game:GetService("Players").LocalPlayer.Character.LeftUpperArm,
+										[28] = nil,
+										[29] = game:GetService("Players").LocalPlayer.Character.RightHand,
+										[30] = game:GetService("Players").LocalPlayer.Character.wood_sword.SwordPart,
+										[31] = game:GetService("Players").LocalPlayer.Character.wood_sword.SwordPart,
+										[32] = game:GetService("Players").LocalPlayer.Character.Head,
+										[33] = nil
+									}
+								}
+							}
+						}
+	
+						game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+					end
+	
+				end
+			else
+				_G.InstaKillExploit = false
+	
+				while _G.InstaKillExploit do wait()
+	
+					if workspace[game.Players.LocalPlayer.Name]:FindFirstChild("wood_sword") then
+						local args = {
+							[1] = {
+								[1] = {
+									[1] = "\18",
+									[2] = "wood_sword",
+									[3] = nil,
+									[4] = Vector3.new(-0.6882433295249939, -5.313460338385312e-09, -0.7254799008369446),
+									[5] = {
+										[1] = nil,
+										[2] = nil,
+										[3] = nil,
+										[4] = nil,
+										[5] = nil,
+										[6] = nil,
+										[7] = nil,
+										[8] = nil,
+										[9] = nil,
+										[10] = nil,
+										[11] = nil,
+										[12] = game:GetService("Players").LocalPlayer.Character.LeftLowerLeg,
+										[13] = game:GetService("Players").LocalPlayer.Character.LeftFoot,
+										[14] = game:GetService("Players").LocalPlayer.Character.RightFoot,
+										[15] = game:GetService("Players").LocalPlayer.Character.RightLowerLeg,
+										[16] = game:GetService("Players").LocalPlayer.Character.RightUpperLeg,
+										[17] = game:GetService("Players").LocalPlayer.Character.LeftUpperLeg,
+										[18] = game:GetService("Players").LocalPlayer.Character.LeftHand,
+										[19] = game:GetService("Players").LocalPlayer.Character.LeftLowerArm,
+										[20] = game:GetService("Players").LocalPlayer.Character.LowerTorso,
+										[21] = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart,
+										[22] = game:GetService("Players").LocalPlayer.Character.UpperTorso,
+										[23] = game:GetService("Players").LocalPlayer.Character.RightLowerArm,
+										[24] = game:GetService("Players").LocalPlayer.Character.wood_sword.Handle,
+										[25] = game:GetService("Players").LocalPlayer.Character.wood_sword.SwordPart,
+										[26] = game:GetService("Players").LocalPlayer.Character.RightUpperArm,
+										[27] = game:GetService("Players").LocalPlayer.Character.LeftUpperArm,
+										[28] = nil,
+										[29] = game:GetService("Players").LocalPlayer.Character.RightHand,
+										[30] = game:GetService("Players").LocalPlayer.Character.wood_sword.SwordPart,
+										[31] = game:GetService("Players").LocalPlayer.Character.wood_sword.SwordPart,
+										[32] = game:GetService("Players").LocalPlayer.Character.Head,
+										[33] = workspace.PlacedItems.UnseperatedMap.concrete.concrete
+									}
+								}
+							}
+						}
+	
+						game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+					end
+	
+				end
+			end
+		elseif on == true then
+			_G.InstaKillExploit = false
+			script.Parent.Parent.Parent.Parent.Parent.ArrayList.TextLabel.Frame.four.Visible = false
+			script.Parent.BackgroundColor3 = Color3.new(0.109804, 0.109804, 0.109804)
+			on = false
+		end
+	end)
+	
+	
+	
+end
+coroutine.wrap(DDCZA_fake_script)()
+local function BBHVD_fake_script() -- TitleFrame.Dragify 
+	local script = Instance.new('LocalScript', TitleFrame)
+
+	script.Parent.Draggable = true
+	script.Parent.Active = true
+	script.Parent.Selectable = true
+end
+coroutine.wrap(BBHVD_fake_script)()
+local function ZQJYZVI_fake_script() -- Arrow_2.LocalScript 
+	local script = Instance.new('LocalScript', Arrow_2)
+
+	local TweenService = game:GetService("TweenService")
+	local Object = script.Parent -- The object you want to tween.
+	local open = false
+	local frame = script.Parent.Parent.Parent.TitleFrame2.DropdownFrame
+	frame:TweenSize(UDim2.new(0, 196,0, 0),Enum.EasingDirection.Out,Enum.EasingStyle.Linear, 0, true)
+	local tweenInfo = TweenInfo.new(
+		0.40, -- The time the tween takes to complete
+		Enum.EasingStyle.Quint, -- The tween style.
+		Enum.EasingDirection.Out, -- EasingDirection
+		0, -- How many times you want the tween to repeat. If you make it less than 0 it will repeat forever.
+		false, -- Reverse?
+		0 -- Delay
+	)
+	
+	local Closed = TweenService:Create(Object, tweenInfo, {Rotation = 180}) -- Creates the tween with the TweenInfo and what properties you want to change
+	
+	local Opened = TweenService:Create(Object, tweenInfo, {Rotation = 0}) -- Creates the tween with the TweenInfo and what properties you want to change
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if open == false then
+			Closed:Play()
+			frame:TweenSize(UDim2.new(0, 196,0, 215),Enum.EasingDirection.Out,Enum.EasingStyle.Quint, 0.40, true)
+			open = true
+		elseif open == true then
+			Opened:Play()
+			frame:TweenSize(UDim2.new(0, 196,0, 0),Enum.EasingDirection.Out,Enum.EasingStyle.Quint, 0.40, true)
+			open = false
+		end
+	end)
+end
+coroutine.wrap(ZQJYZVI_fake_script)()
+local function CWJVK_fake_script() -- Fly.FlyingScript 
+	local script = Instance.new('LocalScript', Fly)
+
+	
+	
+	local on = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if on == false then
+			workspace.Gravity = 0
+			script.Parent.BackgroundColor3 = Color3.new(0.419608, 0.839216, 0)
+			on = true
+		elseif on == true then
+			workspace.Gravity = 196.2
+			script.Parent.BackgroundColor3 = Color3.new(0.109804, 0.109804, 0.109804)
+			on = false
+		end
+	end)
+end
+coroutine.wrap(CWJVK_fake_script)()
+local function UKDSCT_fake_script() -- Fly.LocalScript 
+	local script = Instance.new('LocalScript', Fly)
+
+	local open = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if open == false then
+			script.Parent.Parent.Parent.Parent.Parent.ArrayList.TextLabel.Frame.five.Visible = true
+			open = true
+		elseif open == true then
+			script.Parent.Parent.Parent.Parent.Parent.ArrayList.TextLabel.Frame.five.Visible = false
+			open = false
+		end
+	end)
+end
+coroutine.wrap(UKDSCT_fake_script)()
+local function UJMYS_fake_script() -- Speed.speedScript 
+	local script = Instance.new('LocalScript', Speed)
+
+	local on = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if on == false then
+			script.Parent.Parent.Parent.Parent.Parent.ArrayList.TextLabel.Frame.one.Visible = true
+			script.Parent.BackgroundColor3 = Color3.new(0.419608, 0.839216, 0)
+			on = true
+		elseif on == true then
+			script.Parent.Parent.Parent.Parent.Parent.ArrayList.TextLabel.Frame.one.Visible = false
+			script.Parent.BackgroundColor3 = Color3.new(0.109804, 0.109804, 0.109804)
+			on = false
+		end
+	end)
+	
+	
+	local rs = game:GetService("RunService")
+	
+	
+	rs.Heartbeat:Connect(function()
+		if on == true then
+			game:GetService("Players").LocalPlayer.Character.PrimaryPart.CFrame += game:GetService("Players").LocalPlayer.Character.Humanoid.MoveDirection
+		end
+	end)
+end
+coroutine.wrap(UJMYS_fake_script)()
+local function IDNCE_fake_script() -- TitleFrame2.Dragify 
+	local script = Instance.new('LocalScript', TitleFrame2)
+
+	script.Parent.Draggable = true
+	script.Parent.Active = true
+	script.Parent.Selectable = true
+end
+coroutine.wrap(IDNCE_fake_script)()
+local function QXON_fake_script() -- Arrow_3.LocalScript 
+	local script = Instance.new('LocalScript', Arrow_3)
+
+	local TweenService = game:GetService("TweenService")
+	local Object = script.Parent -- The object you want to tween.
+	local open = false
+	local frame = script.Parent.Parent.Parent.TitleFrame3.DropdownFrame
+	frame:TweenSize(UDim2.new(0, 196,0, 0),Enum.EasingDirection.Out,Enum.EasingStyle.Linear, 0, true)
+	local tweenInfo = TweenInfo.new(
+		0.40, -- The time the tween takes to complete
+		Enum.EasingStyle.Quint, -- The tween style.
+		Enum.EasingDirection.Out, -- EasingDirection
+		0, -- How many times you want the tween to repeat. If you make it less than 0 it will repeat forever.
+		false, -- Reverse?
+		0 -- Delay
+	)
+	
+	local Closed = TweenService:Create(Object, tweenInfo, {Rotation = 180}) -- Creates the tween with the TweenInfo and what properties you want to change
+	
+	local Opened = TweenService:Create(Object, tweenInfo, {Rotation = 0}) -- Creates the tween with the TweenInfo and what properties you want to change
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if open == false then
+			Closed:Play()
+			frame:TweenSize(UDim2.new(0, 196,0, 215),Enum.EasingDirection.Out,Enum.EasingStyle.Quint, 0.40, true)
+			open = true
+		elseif open == true then
+			Opened:Play()
+			frame:TweenSize(UDim2.new(0, 196,0, 0),Enum.EasingDirection.Out,Enum.EasingStyle.Quint, 0.40, true)
+			open = false
+		end
+	end)
+end
+coroutine.wrap(QXON_fake_script)()
+local function AGMYJOS_fake_script() -- Nametags.ESPScript 
+	local script = Instance.new('LocalScript', Nametags)
+
+	local on = false
+	
+	script.Parent.MouseButton1Click:Connect(function(player)
+		if on == false then
+			script.Parent.Parent.Parent.Parent.Parent.ArrayList.TextLabel.Frame.eight.Visible = true
+			script.Parent.BackgroundColor3 = Color3.new(0.419608, 0.839216, 0)
+			on = true
+		elseif on == true then
+			script.Parent.Parent.Parent.Parent.Parent.ArrayList.TextLabel.Frame.eight.Visible = false
+			script.Parent.BackgroundColor3 = Color3.new(0.109804, 0.109804, 0.109804)
+			on = false
+		end
+	end)
+end
+coroutine.wrap(AGMYJOS_fake_script)()
+local function ELBVKPJ_fake_script() -- ArrayList_2.ArrayListScript 
+	local script = Instance.new('LocalScript', ArrayList_2)
+
+	local on = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if on == false then
+			script.Parent.Parent.Parent.Parent.Parent.ArrayList.Enabled = true
+			script.Parent.Parent.Parent.Parent.Parent.ArrayList.TextLabel.Frame.two.Visible = true
+			script.Parent.BackgroundColor3 = Color3.new(0.419608, 0.839216, 0)
+			on = true
+		elseif on == true then
+			script.Parent.Parent.Parent.Parent.Parent.ArrayList.Enabled = false
+			script.Parent.Parent.Parent.Parent.Parent.ArrayList.TextLabel.Frame.two.Visible = false
+			script.Parent.BackgroundColor3 = Color3.new(0.109804, 0.109804, 0.109804)
+			on = false
+		end
+	end)
+end
+coroutine.wrap(ELBVKPJ_fake_script)()
+local function SEKHZ_fake_script() -- TitleFrame3.Dragify 
+	local script = Instance.new('LocalScript', TitleFrame3)
+
+	script.Parent.Draggable = true
+	script.Parent.Active = true
+	script.Parent.Selectable = true
+end
+coroutine.wrap(SEKHZ_fake_script)()
+local function XLMLXEO_fake_script() -- Arrow_4.LocalScript 
+	local script = Instance.new('LocalScript', Arrow_4)
+
+	local TweenService = game:GetService("TweenService")
+	local Object = script.Parent -- The object you want to tween.
+	local open = false
+	local frame = script.Parent.Parent.Parent.TitleFrame4.DropdownFrame
+	frame:TweenSize(UDim2.new(0, 196,0, 0),Enum.EasingDirection.Out,Enum.EasingStyle.Linear, 0, true)
+	local tweenInfo = TweenInfo.new(
+		0.40, -- The time the tween takes to complete
+		Enum.EasingStyle.Quint, -- The tween style.
+		Enum.EasingDirection.Out, -- EasingDirection
+		0, -- How many times you want the tween to repeat. If you make it less than 0 it will repeat forever.
+		false, -- Reverse?
+		0 -- Delay
+	)
+	
+	local Closed = TweenService:Create(Object, tweenInfo, {Rotation = 180}) -- Creates the tween with the TweenInfo and what properties you want to change
+	
+	local Opened = TweenService:Create(Object, tweenInfo, {Rotation = 0}) -- Creates the tween with the TweenInfo and what properties you want to change
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if open == false then
+			Closed:Play()
+			frame:TweenSize(UDim2.new(0, 196,0, 215),Enum.EasingDirection.Out,Enum.EasingStyle.Quint, 0.40, true)
+			open = true
+		elseif open == true then
+			Opened:Play()
+			frame:TweenSize(UDim2.new(0, 196,0, 0),Enum.EasingDirection.Out,Enum.EasingStyle.Quint, 0.40, true)
+			open = false
+		end
+	end)
+end
+coroutine.wrap(XLMLXEO_fake_script)()
+local function MKVDPBA_fake_script() -- Credits.CreditsScript 
+	local script = Instance.new('LocalScript', Credits)
+
+	local on = false
+	local cadit = script.Parent.Parent.Parent.Parent.Credit1
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if on == false then
+			script.Parent.Parent.Parent.Parent.Parent.ArrayList.TextLabel.Frame.three.Visible = true
+			script.Parent.BackgroundColor3 = Color3.new(0.419608, 0.839216, 0)
+			on = true
+			cadit.Visible = true
+		elseif on == true then
+			script.Parent.Parent.Parent.Parent.Parent.ArrayList.TextLabel.Frame.three.Visible = false
+			script.Parent.BackgroundColor3 = Color3.new(0.109804, 0.109804, 0.109804)
+			on = false
+			cadit.Visible = false
+		end
+	end)
+	
+	
+end
+coroutine.wrap(MKVDPBA_fake_script)()
+local function JHLU_fake_script() -- Nuker.CreditsScript 
+	local script = Instance.new('LocalScript', Nuker)
+
+	local on = false
+	local cadit = script.Parent.Parent.Parent.Parent.Credit1
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if on == false then
+			on = true
+			script.Parent.Parent.Parent.Parent.Parent.ArrayList.TextLabel.Frame.seven.Visible = true
+			script.Parent.BackgroundColor3 = Color3.new(0.419608, 0.839216, 0)
+				if on then
+	
+					repeat task.wait(0.1)
+						for _,v in pairs(workspace.PlacedItems:GetChildren()) do
+							local args = {
+								[1] = {
+									[1] = {
+										[1] = "\11",
+										[2] = "wooden_pickaxe",
+	
+										[3] = v
+									}
+								}
+							}
+	
+							game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+					end
+					
+				until not on
+				end
+		else
+			script.Parent.Parent.Parent.Parent.Parent.ArrayList.TextLabel.Frame.seven.Visible = false
+			script.Parent.BackgroundColor3 = Color3.new(0.109804, 0.109804, 0.109804)
+			on = false
+		end
+	end)
+	
+end
+coroutine.wrap(JHLU_fake_script)()
+local function IREOU_fake_script() -- Antivoid.CreditsScript 
+	local script = Instance.new('LocalScript', Antivoid)
+
+	local on = false
+	local lplr = game.Players.LocalPlayer
+	script.Parent.MouseButton1Click:Connect(function()
+	
+		if on == false then
+			on = true
+			script.Parent.Parent.Parent.Parent.Parent.ArrayList.TextLabel.Frame.six.Visible = true
+			script.Parent.BackgroundColor3 = Color3.new(0.419608, 0.839216, 0)
+			repeat wait()
+				if lplr.Character.HumanoidRootPart.Position.Y < 1 then
+					local e = Instance.new("BodyVelocity",lplr.Character.HumanoidRootPart)
+					workspace.Gravity = 0
+					e.Velocity = Vector3.new(lplr.Character.HumanoidRootPart.Velocity.X,130,lplr.Character.HumanoidRootPart.Velocity.Z)
+					task.wait(0.5)
+					e:Destroy()
+					workspace.Gravity = 196.2
+				end
+			until not on
+		else
+			script.Parent.BackgroundColor3 = Color3.new(0.109804, 0.109804, 0.109804)
+			script.Parent.Parent.Parent.Parent.Parent.ArrayList.TextLabel.Frame.six.Visible = false
+		on = false
+		end
+	end)
+end
+coroutine.wrap(IREOU_fake_script)()
+local function SDUFZHS_fake_script() -- TitleFrame4.Dragify 
+	local script = Instance.new('LocalScript', TitleFrame4)
+
+	script.Parent.Draggable = true
+	script.Parent.Active = true
+	script.Parent.Selectable = true
+end
+coroutine.wrap(SDUFZHS_fake_script)()
+local function LKOGMFU_fake_script() -- Description.RAINBOW 
+	local script = Instance.new('LocalScript', Description)
+
+	local text = script.Parent
+	local add = 15
+	wait()
+	local k = 1
+	while k <= 255 do
+		text.TextColor3 = Color3.new(k/255,0/255,0/255)
+		k = k + add
+		wait()
+	end
+	while true do
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255,k/255,0/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255 - k/255,255/255,0/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(0/255,255/255,k/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(0/255,255/255 - k/255,255/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(k/255,0/255,255/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255,0/255,255/255 - k/255)
+			k = k + add
+			wait()
+		end
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255 - k/255,0/255,0/255)
+			k = k + add
+			wait()
+		end
+	end
+end
+coroutine.wrap(LKOGMFU_fake_script)()
+local function VSWVUPQ_fake_script() -- TextLabel_2.RAINBOW 
+	local script = Instance.new('LocalScript', TextLabel_2)
+
+	local text = script.Parent
+	local add = 15
+	wait()
+	local k = 1
+	while k <= 255 do
+		text.TextColor3 = Color3.new(k/255,0/255,0/255)
+		k = k + add
+		wait()
+	end
+	while true do
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255,k/255,0/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255 - k/255,255/255,0/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(0/255,255/255,k/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(0/255,255/255 - k/255,255/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(k/255,0/255,255/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255,0/255,255/255 - k/255)
+			k = k + add
+			wait()
+		end
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255 - k/255,0/255,0/255)
+			k = k + add
+			wait()
+		end
+	end
+end
+coroutine.wrap(VSWVUPQ_fake_script)()
+local function HTBSLAM_fake_script() -- vxydiasware.OpenGui 
+	local script = Instance.new('LocalScript', vxydiasware)
+
+	local UIS = game:GetService("UserInputService")
+	local toggle = false
+	
+	UIS.InputBegan:Connect(function(input, gameProcessed)
+		if input.KeyCode == Enum.KeyCode.RightShift then
+			if toggle then
+				script.Parent.Enabled = true
+				toggle = false
+			elseif not toggle then
+				script.Parent.Enabled = false
+				toggle = true
+			end
+		end
+	end)
+end
+coroutine.wrap(HTBSLAM_fake_script)()
+local function NWTKRU_fake_script() -- Description_2.RAINBOW 
+	local script = Instance.new('LocalScript', Description_2)
+
+	local text = script.Parent
+	local add = 15
+	wait()
+	local k = 1
+	while k <= 255 do
+		text.TextColor3 = Color3.new(k/255,0/255,0/255)
+		k = k + add
+		wait()
+	end
+	while true do
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255,k/255,0/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255 - k/255,255/255,0/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(0/255,255/255,k/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(0/255,255/255 - k/255,255/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(k/255,0/255,255/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255,0/255,255/255 - k/255)
+			k = k + add
+			wait()
+		end
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255 - k/255,0/255,0/255)
+			k = k + add
+			wait()
+		end
+	end
+end
+coroutine.wrap(NWTKRU_fake_script)()
